@@ -1,225 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="SafePath offers reliable facility management and home maintenance services, including cleaning, plumbing, electrical, pest control, and more. Trusted by homes and businesses alike." />
-  <meta name="keywords" content="SafePath, facility management, home services, cleaning, pest control, plumbing, electrical, disinfection, office maintenance, repair services" />
-  <meta name="author" content="SafePath Enterprises" />
-  <meta property="og:title" content="SafePath - Facility Management & Maintenance Services" />
-  <meta property="og:description" content="SafePath provides professional, reliable facility management and maintenance solutions for homes and offices." />
-  <meta property="og:image" content="assets/img/og-image.jpg" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://safepathent.com" />
-  <title>SafePath | Facility Management & Maintenance Services</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description"
+        content="SafePath Facilities Redefined offers professional facility management, housekeeping, pest control, and maintenance services across Bangalore, ensuring quality, reliability, and trust." />
+    <meta name="keywords"
+        content="SafePath, Facilities Redefined, facility management Bangalore, housekeeping, pest control, maintenance, home cleaning, office cleaning, property management" />
+    <meta name="author" content="SafePath Facilities Redefined" />
+    <meta property="og:title" content="SafePath - Facilities Redefined" />
+    <meta property="og:description"
+        content="Expert facility management and housekeeping services in Bangalore. Facilities Redefined." />
+    <meta property="og:image" content="https://safepathent.com/logo3.png" />
+    <meta property="og:url" content="https://safepathent.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>SafePath - Facilities Redefined | Facility Management in Bangalore</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/png" href="assets/img/logo3.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
 
-  <!-- Font Awesome -->
-  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&display=swap" rel="stylesheet" />
+        /* Navbar */
+        #mainNav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 0.5rem 1rem;
+        }
 
-  <!-- Bootstrap Theme CSS -->
-  <link href="css/styles.css" rel="stylesheet" />
+        .navbar-logo {
+            height: 60px;
+            width: auto;
+            max-width: 240px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .navbar-logo:hover {
+            transform: scale(1.05);
+        }
+
+        .navbar-nav .nav-link {
+            color: #0072ce !important;
+            font-weight: 500;
+        }
+
+        .masthead {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url("assets/img/hero-bg.jpg") center/cover no-repeat;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .masthead h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .masthead p {
+            font-size: 1.25rem;
+        }
+
+        .btn-primary {
+            background-color: #0072ce;
+            border-color: #0072ce;
+        }
+
+        .btn-primary:hover {
+            background-color: #005fa3;
+            border-color: #005fa3;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-heading {
+            color: #0072ce;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .why-us i {
+            font-size: 2.5rem;
+            color: #0072ce;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #0072ce;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .masthead h1 {
+                font-size: 2.2rem;
+            }
+
+            .masthead p {
+                font-size: 1rem;
+            }
+
+            .navbar-logo {
+                height: 50px;
+            }
+            .logo-title {
+                
+            }
+        }
+    </style>
 </head>
+
 <body id="page-top">
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#page-top" aria-label="Safe Path">
-        <img src="assets/img/logo4.png" alt="Safe Path Facilities logo" class="navbar-logo">
-      </a>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">
+                <img src="assets/img/logo3.png" alt="SafePath Facilities Redefined logo" class="navbar-logo" /><span class="logo-title">SafePath</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-primary"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#whyus">Why Choose Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu <i class="fas fa-bars ms-1"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <!-- Masthead -->
+    <header class="masthead">
+        <div class="container">
+            <h1>Facilities Redefined with SafePath</h1>
+            <p class="mt-3">Professional facility management and housekeeping across Bangalore</p>
+            <a href="#contact" class="btn btn-primary btn-lg text-uppercase mt-4">Get in Touch</a>
+            <a href="https://wa.me/919902399070" target="_blank"
+                class="btn btn-outline-light btn-lg text-uppercase mt-4 ms-3">
+                <i class="fab fa-whatsapp"></i> WhatsApp Us
+            </a>
+        </div>
+    </header>
 
-  <!-- Hero Section -->
-  <header class="masthead text-center text-white d-flex align-items-center">
-    <div class="container">
-      <div class="masthead-subheading">Welcome to SafePath!</div>
-      <div class="masthead-heading text-uppercase">Your Trusted Facility Partner</div>
-      <a class="btn btn-primary btn-xl text-uppercase" href="#services">Explore Our Services</a>
-    </div>
-  </header>
+    <!-- Services Section -->
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Our Services</h2>
+                <p class="section-subheading text-muted">Comprehensive facility and maintenance services designed to
+                    make your property care effortless and efficient.</p>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-broom fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Cleaning Services</h4>
+                    <p class="text-muted">Professional cleaning solutions for homes and offices with trained staff and
+                        eco-friendly products.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Plumbing Services</h4>
+                    <p class="text-muted">Expert plumbing solutions for installations, repairs, and maintenance.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-bolt fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Electrical Services</h4>
+                    <p class="text-muted">Professional electrical work ensuring safety and reliability.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-hammer fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Carpentry Services</h4>
+                    <p class="text-muted">Skilled carpentry work for repairs, installations, and custom solutions.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-paint-roller fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Painting Services</h4>
+                    <p class="text-muted">Quality painting services for interior and exterior spaces.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-tools fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Appliance Repair</h4>
+                    <p class="text-muted">Expert repair and maintenance for all types of home and office appliances.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-spray-can fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Sanitization & Disinfection</h4>
+                    <p class="text-muted">Professional sanitization services to ensure a clean and healthy environment.
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-building fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Facility Management</h4>
+                    <p class="text-muted">Comprehensive facility management solutions tailored to your needs.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fas fa-bug fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="my-3">Pest Control <span class="badge bg-secondary small align-top">Associated</span>
+                    </h4>
+                    <p class="text-muted">Pest control is provided as an associated service through trusted partners to
+                        maintain a hygienic environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Services -->
-  <section class="page-section" id="services">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="section-heading text-uppercase">Our Services</h2>
-        <p class="section-subheading text-muted">Comprehensive facility and maintenance services designed to make your property care effortless and efficient.</p>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4 mb-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-broom fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="my-3">Cleaning Services</h4>
-          <p class="text-muted">Professional cleaning solutions for homes and offices with trained staff and eco-friendly products.</p>
+    <!-- About -->
+    <section class="page-section bg-light" id="about">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">About SafePath</h2>
+                <p class="section-subheading text-muted">Dedicated to delivering excellence in facility management and
+                    customer satisfaction.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>SafePath was founded with a vision to simplify property maintenance for everyone. We provide
+                        customized solutions for residential and commercial spaces—ensuring safety, comfort, and value
+                        in every service we deliver.</p>
+                    <p>Our team combines experience, integrity, and innovation to deliver end-to-end facility management
+                        services you can trust.</p>
+                    <ul class="text-start mt-4">
+                        <li><strong>Experience:</strong> Years of expertise in facility management, serving homes,
+                            offices, and industries across the region.</li>
+                        <li><strong>Reliability:</strong> Timely, transparent, and dependable service with a focus on
+                            customer satisfaction.</li>
+                        <li><strong>Comprehensive Solutions:</strong> From cleaning and pest control to electrical,
+                            plumbing, and specialized maintenance, we cover all your property needs.</li>
+                        <li><strong>Trained Professionals:</strong> Our staff is background-verified, skilled, and
+                            committed to quality workmanship.</li>
+                        <li><strong>Customer-Centric Approach:</strong> We listen, adapt, and deliver solutions tailored
+                            to your unique requirements.</li>
+                        <li><strong>Safety & Compliance:</strong> We follow industry best practices and use safe,
+                            eco-friendly products and methods.</li>
+                        <li><strong>Mission:</strong> To make property maintenance hassle-free, affordable, and
+                            accessible for everyone.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 mb-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-wrench fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="my-3">Plumbing Services</h4>
-          <p class="text-muted">Expert plumbing solutions for installations, repairs, and maintenance.</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-bolt fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="my-3">Electrical Services</h4>
-          <p class="text-muted">Professional electrical work ensuring safety and reliability.</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-hammer fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="my-3">Carpentry Services</h4>
-          <p class="text-muted">Skilled carpentry work for repairs, installations, and custom solutions.</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-paint-roller fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="my-3">Painting Services</h4>
-          <p class="text-muted">Quality painting services for interior and exterior spaces.</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-tools fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="my-3">Appliance Repair</h4>
-          <p class="text-muted">Expert repair and maintenance for all types of home and office appliances.</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-spray-can fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="my-3">Sanitization & Disinfection</h4>
-          <p class="text-muted">Professional sanitization services to ensure a clean and healthy environment.</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-building fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="my-3">Facility Management</h4>
-          <p class="text-muted">Comprehensive facility management solutions tailored to your needs.</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <span class="fa-stack fa-4x">
-            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-            <i class="fas fa-bug fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="my-3">Pest Control <span class="badge bg-secondary small align-top">Associated</span></h4>
-          <p class="text-muted">Pest control is provided as an associated service through trusted partners to maintain a hygienic environment.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About -->
-  <section class="page-section bg-light" id="about">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="section-heading text-uppercase">About SafePath</h2>
-        <p class="section-subheading text-muted">Dedicated to delivering excellence in facility management and customer satisfaction.</p>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <p>SafePath was founded with a vision to simplify property maintenance for everyone. We provide customized solutions for residential and commercial spaces—ensuring safety, comfort, and value in every service we deliver.</p>
-          <p>Our team combines experience, integrity, and innovation to deliver end-to-end facility management services you can trust.</p>
-          <ul class="text-start mt-4">
-            <li><strong>Experience:</strong> Years of expertise in facility management, serving homes, offices, and industries across the region.</li>
-            <li><strong>Reliability:</strong> Timely, transparent, and dependable service with a focus on customer satisfaction.</li>
-            <li><strong>Comprehensive Solutions:</strong> From cleaning and pest control to electrical, plumbing, and specialized maintenance, we cover all your property needs.</li>
-            <li><strong>Trained Professionals:</strong> Our staff is background-verified, skilled, and committed to quality workmanship.</li>
-            <li><strong>Customer-Centric Approach:</strong> We listen, adapt, and deliver solutions tailored to your unique requirements.</li>
-            <li><strong>Safety & Compliance:</strong> We follow industry best practices and use safe, eco-friendly products and methods.</li>
-            <li><strong>Mission:</strong> To make property maintenance hassle-free, affordable, and accessible for everyone.</li>
-          </ul>
+    <!-- Why Choose Us -->
+    <section id="whyus">
+        <div class="container text-center">
+            <h2 class="section-heading mb-5">Why Choose Us</h2>
+            <div class="row why-us">
+                <div class="col-md-4">
+                    <i class="fas fa-user-shield"></i>
+                    <h5>Trusted Professionals</h5>
+                    <p>All our staff undergo background verification and are trained for quality service.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-leaf"></i>
+                    <h5>Eco-Friendly Solutions</h5>
+                    <p>We use non-toxic, safe materials for cleaning and pest control to protect your environment.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-clock"></i>
+                    <h5>On-Time & Reliable</h5>
+                    <p>We value your time. Expect punctual, professional, and dependable services every time.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-thumbs-up"></i>
+                    <h5>Customer Satisfaction</h5>
+                    <p>We prioritize your satisfaction and consistently strive to exceed expectations.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-cogs"></i>
+                    <h5>Comprehensive Solutions</h5>
+                    <p>From cleaning to maintenance, we offer a complete range of facility services under one roof.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-rupee-sign"></i>
+                    <h5>Transparent Pricing</h5>
+                    <p>Clear, upfront pricing with no hidden charges—so you always know what to expect.</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Team -->
-  <section class="page-section" id="team">
-    <div class="container">
-      <div class="text-center">
-        <h2 class="section-heading text-uppercase">Our Leadership</h2>
-        <p class="section-subheading text-muted">Meet the visionaries behind SafePath.</p>
-      </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="Srinivasan - Director, SafePath" />
-            <h4>Srinivasan</h4>
-            <p class="text-muted">Director</p>
-          </div>
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light">
+        <div class="container text-center">
+            <h2 class="section-heading mb-4">Contact Us</h2>
+            <p class="lead">We’re just a call or message away!</p>
+            <p>📍 Bangalore, Karnataka</p>
+            <p>📞 <a href="tel:+919902399070">+91 99023 99070</a></p>
+            <p>📧 <a href="mailto:info@safepathent.com">info@safepathent.com</a></p>
+            <div class="mt-3">
+                <a href="https://wa.me/919902399070" target="_blank" class="btn btn-success btn-lg">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
         </div>
-        <div class="col-lg-6">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="Viswanath - Director, SafePath" />
-            <h4>Vishwanath</h4>
-            <p class="text-muted">Director</p>
-          </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div>© 2025 SafePath Facilities Redefined | Bangalore, India</div>
+        <div class="mt-2">
+            <a href="#services">Services</a> |
+            <a href="#about">About</a> |
+            <a href="#whyus">Why Choose Us</a> |
+            <a href="#contact">Contact</a>
         </div>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Contact -->
-  <section class="page-section bg-light" id="contact">
-    <div class="container text-center">
-      <h2 class="section-heading text-uppercase">Contact SafePath</h2>
-      <p class="section-subheading text-muted">We’re here to assist you with all your facility management needs.</p>
-
-      <div class="mb-4">
-        <a href="tel:+919902399070" class="btn btn-success btn-lg m-2"><i class="fas fa-phone"></i> Call Us</a>
-        <a href="mailto:info@safepathent.com" class="btn btn-warning btn-lg m-2"><i class="fas fa-envelope"></i> Email Us</a>
-        <a href="https://wa.me/919902399070?text=Hi%2C%20I%20am%20from%20safepathent.com" target="_blank" class="btn btn-outline-dark btn-lg m-2"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
-      </div>
-
-      <p class="fs-5 mb-1">📞 <strong>Phone:</strong> <a href="tel:+919902399070" class="text-success text-decoration-none">+91 99023 99070</a></p>
-      <p class="fs-5">📧 <strong>Email:</strong> <a href="mailto:info@safepathent.com" class="text-warning text-decoration-none">info@safepathent.com</a></p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer py-4 bg-dark text-white text-center">
-    <div class="container">
-      <p class="mb-0">&copy; 2025 SafePath Enterprises. All Rights Reserved.</p>
-      <small>Maintained by SafePath | <a href="#page-top" class="text-light text-decoration-none">Back to top</a></small>
-    </div>
-  </footer>
-
-  <!-- Bootstrap core JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
